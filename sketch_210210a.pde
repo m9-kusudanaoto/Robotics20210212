@@ -1,0 +1,34 @@
+ //base
+  stroke(0);
+  translate(0,0,baseZ/2);
+  rotateZ(radians(angle1));
+  fill(0);
+  box(baseX,baseY,baseZ);
+  
+  //arm1
+  noStroke();
+  translate(0,0,baseZ/2);
+  rotateX(radians(angle2));  
+  rotateZ(radians(angle3));
+  translate(0,arm1Y/2+baseY/2,-arm1Z/2);
+  fill(0);
+  box(arm1X,arm1Y,arm1Z);
+   //arm2
+  translate(0,arm1Y/2-arm2Y,0);
+  rotateX(radians(angle4));
+  rotateZ(radians(angle5));
+  fill(0);
+  box(arm2X,arm2Y,arm2Z);
+  //arm3
+  translate(0,0,arm2Z/2); 
+  rotateX(radians(angle6));
+  translate(0,0,arm3Z/2);
+  fill(0);
+  box(arm3X,arm3Y,arm3Z);
+  //arm4
+  translate(0,0,arm3Z/2);
+  rotateX(radians(angle7));
+  translate(0,0,arm4Z/2);
+  fill(0);
+  box(arm4X,arm4Y,arm4Z);
+}
